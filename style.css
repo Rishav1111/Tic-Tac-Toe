@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(21, 21, 2);
+    color: white;
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Mooli', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.game-container{
+    /* background-color: #ffa939; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 40px;
+}
+.container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Mooli', sans-serif;
+
+}
+
+.box{
+    font-size: 8vw;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.box:hover{
+    background-color: rgb(235, 220, 249);
+    
+}
+
+.info{
+    font-size: 25px;
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Mooli', sans-serif;
+}
+
+.imgbox img{
+
+    width: 0;
+    transition: width is ease-in-out;
+}
+.img img{
+
+    width: 0;
+    transition: width is ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 6px 14px;
+    background: #e5c7e5;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Mooli', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+@media screen  and (max-width : 950px){
+    .game-container{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px ;
+    }
+    .gameInfo h1{
+        font-size: 1rem;
+    }
+    .container{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+}
